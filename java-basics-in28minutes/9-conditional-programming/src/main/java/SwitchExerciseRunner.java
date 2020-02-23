@@ -1,4 +1,4 @@
-public class SwitchExcercisesRunner {
+public class SwitchExerciseRunner {
     public static void main(String[] args) {
         System.out.println(determineNameOfDay(2));
 

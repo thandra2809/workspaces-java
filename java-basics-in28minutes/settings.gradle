@@ -2,4 +2,5 @@ rootProject.name = 'java-basics-in28minutes'
 include 'primitive-data-types'
 include '7-object-oriented-programming'
 include '9-conditional-programming'
+include '10-loops-programming'
 
