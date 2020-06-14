@@ -12,4 +12,5 @@ include '16-functional-java'
 include '17-threads'
 include '18-exception-handling'
 include '19-files'
+include '8-primitive-data-types'
 
