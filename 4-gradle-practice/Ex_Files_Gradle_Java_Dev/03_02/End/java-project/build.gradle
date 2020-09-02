@@ -1,0 +1,21 @@
+group 'info.garagesalesapp'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+project.sourceCompatibility = 1.8
+
+project.repositories {
+    mavenCentral()
+}
+
+project.dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project(':json-display')
+}
+
+apply plugin: 'project-report'
+
+
+
+
