@@ -1,0 +1,35 @@
+buildscript {
+    dependencies {
+        classpath files('show-date/build/libs/show-date-1.0-SNAPSHOT.jar')
+    }
+}
+
+plugins {
+    id 'com.gradle.build-scan' version '1.6'
+}
+
+buildScan {
+    licenseAgreementUrl = 'https://gradle.com/terms-of-service'
+    licenseAgree = 'yes'
+}
+
+group 'info.garagesalesapp'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project(':json-display')
+}
+
+apply plugin: 'project-report'
+
+apply plugin: 'show-date-plugin'
+
